@@ -1,0 +1,163 @@
+main::before,
+main::after {
+    content: '';
+    display: block;
+}
+
+main::after {
+    clear: both;
+    overflow: hidden;
+}
+
+#productMenu {
+    width: 162px;
+    margin-left: 10px;
+    float: left;
+}
+
+#productMenu>ul>li {
+    margin-bottom: 3px;
+}
+
+#productMenu>ul>li>a {
+    background-image: url(../images/productMenuBg.png);
+    display: block;
+    height: 39px;
+    text-align: center;
+    color: #a7f0a7;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: 0.15em;
+}
+
+#productMenu>ul>li>a:hover {
+    background-image: url(../images/productMenuBg.png);
+    background-position: 0 -50px;
+}
+
+#productMenu>ul>li>a.amenuActive {
+    color: #cbcb06;
+}
+
+#productMenu ul ul {
+    margin-top: 8px;
+    padding-bottom: 20px;
+}
+
+#productMenu ul ul li a {
+    display: block;
+    text-align: center;
+    border-bottom: 1px dotted white;
+    margin: 0 15px 10px 15px;
+    padding-bottom: 5px;
+    color: #0c2e0c;
+    font-size: 0.95em;
+    letter-spacing: 0.15em;
+}
+
+#productMenu ul ul li a.menuActive {
+    background-color: rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+    padding-top: 4px;
+    border-radius: 0 0 5px 5px;
+}
+
+#productList {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+    width: calc(100% - 192px);
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productList>span,
+#productList li {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 10px;
+    color: #0c2e0c;
+    transition: 1.5s;
+}
+
+#productList li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#productList>span {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#productList li div {
+    overflow: hidden;
+}
+
+#productList li img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+#productList li:hover img {
+    transform: scale(1.4, 1.4) rotate(15deg);
+}
+
+#productList li h3 {
+    letter-spacing: 0.1em;
+    border-bottom: 1px dashed #0c2e0c;
+    padding-bottom: 8px;
+}
+
+#productList li p {
+    font-size: 0.95em;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    padding-bottom: 12px;
+}
+
+#productList li p:nth-last-of-type(n+2) {
+    border-bottom: 1px dashed #0c2e0c;
+}
+
+#productList li p::before {
+    background-color: #095a09;
+    color: white;
+    font-size: 0.9em;
+    padding: 1px 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#productList li p.desc::before {
+    content: '說明';
+}
+
+#productList li p.ingre::before {
+    content: '成份';
+}
+
+.topBtn {
+    display: block;
+    background-color: darkorange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 600px;
+    right: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#productList li p span {
+    display: inline-block;
+    background-color: #095a09;
+    color: white;
+    font-size: 0.9em;
+    padding: 1px 10px;
+    margin: 3px 5px;
+    border-radius: 20px;
+}

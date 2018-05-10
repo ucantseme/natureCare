@@ -1,0 +1,67 @@
+#contactForm {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#contactForm fieldset {
+    margin: 10px;
+    border: none;
+    border-top: 1px dashed rgba(255, 255, 255, 0.69);
+}
+
+#contactForm fieldset p label:first-child {
+    display: inline-block;
+    width: 100px;
+    text-align-last: justify;
+}
+
+#contactForm label[for="detail"],
+#contactForm label[for="detail"]+span {
+    vertical-align: top;
+}
+
+#contactForm legend {
+    background-color: rgba(0, 100, 0, 0.3);
+    padding: 3px 15px;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.69);
+}
+
+#contactForm>p:last-child {
+    text-align: center;
+}
+
+#detail,#email{
+    width:calc(100% - 130px);
+    resize: vertical;
+}
+#submit,#reset{
+    width:120px;
+    margin:0 10px;
+}
+.timeGroup span{
+    display:inline-block;
+}
+#contactForm label[for^="time"],
+#contactForm label[for$="male"]{
+    margin-right:20px;
+}
+@media(min-width:1025px){
+    #contactForm{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    #contactForm fieldset{
+        flex:1;
+        border:1px solid rgba(255, 255, 255, 0.69);
+    }
+    #contactForm>p:last-child{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .timeGroup span{
+        display:block;
+        margin-left:120px;
+    }
+} 

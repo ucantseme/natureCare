@@ -1,0 +1,38 @@
+#slider {
+    overflow: hidden;
+}
+
+#slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#slider ul li {
+    float: left;
+}
+
+#slider ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+.sliderBtn {
+    float: left;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    text-indent: -99999px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+.sliderBtnActive{
+    background-color: rgb(12, 95, 18);
+}

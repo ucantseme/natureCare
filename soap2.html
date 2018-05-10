@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="NatureCare,Nature,手工皂,草本精油">
+    <meta name="description" content="NatureCare">
+    <title>NatureCare</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        $(function(){
+            $('header').load('headercontent.html',
+                             function(){
+                                mainNavEff();
+                             });
+            $('footer').load('footerContent.html');
+            $('#productMenu').load('productMenu.html',function(){
+                                        productMenuEff();
+                                        var thisMenu=$('#productMenu>ul>li:nth-child(2)');
+                                        thisMenu.children('a').click();
+                                        thisMenu.find('li').eq(1).children('a').addClass('menuActive')/* 此處的 addClass() 有權重問題 */;
+                                   });
+            soapList('xml/soap1.xml','乾性')
+            setTopBtn();
+            sliderEff();
+        })
+    </script>
+</head>
+<body>
+    <header>
+    </header>
+    <div id="banner">
+        <div id="slider">
+            <ul>
+                <li><img src="slider/slider01.jpg" alt=""></li>
+                <li><img src="slider/slider02.jpg" alt=""></li>
+                <li><img src="slider/slider03.jpg" alt=""></li>
+                <li><img src="slider/slider04.jpg" alt=""></li>
+                <li><img src="slider/slider05.jpg" alt=""></li>
+                <li><img src="slider/slider06.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <nav id="productMenu">
+        </nav>
+        <ul id="productList">
+<!--
+            <li>
+                <img src="imgSoap/thum/soap01.jpg" alt="">
+                <h3>玫瑰潤澤皂</h3>
+                <p>玫瑰精油加上珊瑚紅礦土，滋潤保濕肌膚效果佳</p>
+                <p>玫瑰精油、珊瑚紅礦土、椰子油、橄欖油、芥花油、棕櫚硬脂</p>
+            </li>
+            '<li><img src="imgSoap/thum/'+$(this).find('photo').text()+'" alt=""><h3>'+$(this).find('name').text()+'</h3><p>'+$(this).find('desc').text()+'</p><p>'+$(this).find('ingre').text()+'</p></li>'
+-->
+        </ul>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+

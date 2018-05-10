@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>NatureCare</title>
+    <meta name="keywords" content="NatureCare,Nature,手工皂,精油">
+    <meta name="descripion" content="NatureCare純天然手工皂,無添加化學添加物,適用於所有年齡層,使您買得放心用得安心">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script>
+    $(function(){
+        $('header').load('headercontent.html',
+                         function(){
+                            mainNavEff();
+                         });
+        $('footer').load('footercontent.html');
+        
+    });
+    </script>
+</head>
+<body>
+    
+   <header>
+    
+   </header>
+   <div id="banner">    
+       <img src="images/banner.jpg" alt="">
+   </div>
+   <main>
+       <form id="contactForm" action="mailContact.php" method="post" novalidate>
+            <fieldset>
+               <legend>聯絡內容</legend>
+                <p>
+                    <label for="command">聯絡事項</label>：
+                    <select name="command" id="command">
+                        <option value="">---請選擇---</option>
+                        <option value="產品諮詢">產品諮詢</option>
+                        <option value="合作提案">合作提案</option>
+                        <option value="課程諮詢">課程諮詢</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="detail">內容</label><span>：</span>
+                    <textarea name="detail" id="detail" cols="30" rows="10"></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+               <legend>聯絡資訊</legend>
+                <p>
+                    <label for="name">姓名</label>：
+                    <input type="text" id="name" name="name"  maxlength="12" placeholder="your name" required>
+                </p>
+                <p>
+                    <label for="mobile">行動電話</label>：
+                    <input type="tel" id="mobile" name="mobile" required>
+                </p>
+                <p>
+                    <label for="email">電子郵件</label>：
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                   <label for=""> 性別</label>：
+                    <input type="radio" id="male" name="sex" value="男">
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="sex" value="女">
+                    <label for="female">女</label>
+                </p>
+                <p class="timeGroup">
+                   <label for=""> 聯絡時段</label>：
+                    <span>
+                        <input type="checkbox" id="time1" name="callTime[]" value="9:00-12:00">
+                        <label for="time1">9:00-12:00</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="time2" name="callTime[]" value="14:00-17:00">
+                        <label for="time2">14:00-17:00</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="time3" name="callTime[]" value="19:00-20:00">
+                        <label for="time3">19:00-20:00</label>
+                    </span>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" id="submit" name="submit" value="送出">
+                <input type="reset" id="reset" name="reset" value="清除">
+            </p>
+        </form>
+   </main>
+   
+   <footer>
+    
+   </footer>
+</body>
+</html>

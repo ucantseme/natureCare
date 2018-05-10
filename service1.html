@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>NatureCare</title>
+    <meta name="keywords" content="NatureCare,Nature,手工皂,精油">
+    <meta name="descripion" content="NatureCare純天然手工皂,無添加化學添加物,適用於所有年齡層,使您買得放心用得安心">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.min.css">   
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script>
+    $(function(){
+        $('header').load('headercontent.html',
+                         function(){
+                            mainNavEff();
+                         });
+        $('footer').load('footercontent.html');
+        $('#soTabs').tabs({
+            hide: { effect: "fade", duration: 1000 },
+            show: { effect: "fade", duration: 800 }
+        });
+        
+    });
+    </script>
+</head>
+<body>
+    
+    <header>    
+    </header>
+    <div id="banner">    
+        <img src="images/banner.jpg" alt="">
+    </div>
+    <main>
+        <h1>客製手工皂訂製流程與注意事項</h1>
+        <div id="soTabs">
+            <ul>
+                <li><a href="#tabs-1">訂製流程</a></li>
+                <li><a href="#tabs-2">付款方式</a></li>
+                <li><a href="#tabs-3">注意事項</a></li>
+                <li><a href="#tabs-4">售後服務</a></li>
+            </ul>
+            <div id="tabs-1">
+                <dt>下單訂製</dt>
+                <dd>來信或電話告知訂購的皂款和數量。</dd>
+                <dt>調配專屬配方</dt>
+                <dd>配方人員會依手工皂使用者年齡、膚質等資料，與您討論調配專屬配方。</dd>
+                <dt>訂單確認</dt>
+                <dd>服務人員與訂購者確認專屬配方、數量及金額。</dd>
+                <dt>匯款</dt>
+                <dd>依訂單完成匯款後，請來信(電)告知匯款人姓名、電話、寄送地址、匯款金額、轉帳末五碼。</dd>
+                <dt>開始製作</dt>
+                <dd>確認匯款後即開始製作手工皂，視皂品原料特性，約4~6週後完成。</dd>
+                <dt>出貨</dt>
+                <dd>手工皂製作完成後將成品寄出，欲提前或延後出貨者請事先告知。</dd>
+            </div>
+            <div id="tabs-2">
+                <p>提供線上刷卡、ATM轉帳、銀行匯款、超商付款多種付款機制。</p>
+                <dt>線上刷卡</dt>
+                <dd>線上刷卡採用128bits SSL加密安全機制傳輸資料，您可以安心使用信用卡（VISA、MASTER、JCB）即時線上刷卡，資料傳輸過程中完全加密處理以保障會員線上消費安全。</dd>
+                <dt>ATM轉帳/銀行匯款</dt>
+                <dd>戶名：自然心事業有限公司</dd>
+                <dd>銀行名稱：台灣銀行(台北分行)</dd>
+                <dd>行號/銀行代號：999</dd>
+                <dd>帳號：0999-10-12345678</dd>
+                <dd>凡訂購完成後請於7日內完成匯款，否則電腦將自動取消訂單。</dd>
+                <dt>超商付款</dt>
+                <dd>消費者訂購後可前往超商（包含7-11、全家、萊爾富、OK）任一門市付款，繳款金額上限均為20000元</dd>
+                <dt>備註</dt>
+                <dd>採用ATM轉帳-轉帳後請來電提供戶名及帳號末五碼</dd>
+                <dd>採用銀行匯款-匯款後請來電提供匯款者姓名及匯款日期以利為您確認款項</dd>
+                <dt>服務專線</dt>
+                <dd>(02) 2776-9999分機99</dd>
+                <dt>服務信箱</dt>
+                <dd>service@natruecare.com</dd>
+            </div>
+            <div id="tabs-3">
+                <ul>
+                    <li>手工皂製作每款略不同，圖片僅供參考，以實物為準。</li>
+                    <li>天然植物染色的手工皂，有時顏色會隨時間褪去，若是陽光或燈光照射，將加速顏色淡化。</li>
+                    <li>手工皂的保存請避開潮濕與悶熱，建議熟成後一年內使用完畢，若手工皂出現油斑或油味，則表示皂已酸敗不要再使用。</li>
+                    <li>手工皂富含保濕的甘油，所以容易吸附水分，故請保持晾皂處或浴室乾燥通風，並使用底部鏤空的皂盒以防積水，如此可增加手工皂的使用時間與壽命。</li>
+                </ul>
+            </div>
+            <div id="tabs-4">
+                <ul>
+                    <li>NatrueCare提供完善的售後服務。</li>
+                    <li>提供手工皂使用或保存問題的諮?，您可致電或來信客服部，都將有專人為您服務。</li>
+                    <li>提供手工皂配方及完整製作明細查詢，以便提供更完善的使用諮詢。</li>
+                    <li>提供老客戶優惠價，再次訂購可享專屬優惠。</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
